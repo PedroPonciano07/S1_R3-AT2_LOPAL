@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="atividade 4 valor da compra"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 01:57:56 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQyOzIwMjUtMDQtMDg7IjAxOjM4OjUyICI7MjYyNA=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQyOzIwMjUtMDQtMDg7IjAxOjU3OjU2ICI7MTsyNzM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valorUm, valorCompra" type="Integer" array="False" size=""/>
+            <output expression="&quot;insira o valor do produto&quot;" newline="True"/>
+            <input variable="valorCompra"/>
+            <if expression="valorCompra&gt;=100">
+                <then>
+                    <assign variable="valorCompra" expression="valorCompra*0.9"/>
+                    <output expression="&quot;voce ganhou um desconto de 10% no valor de &quot;&amp;valorCompra&amp;&quot;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;nao recebeu desconto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
